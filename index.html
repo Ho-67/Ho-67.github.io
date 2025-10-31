@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CHIA NI 的個人前端作品集，包含 Vue.js、Node.js、設計與全端開發專案展示。">
+    <meta property="og:title" content="HO-67 | Frontend Developer Portfolio">
+    <meta property="og:description" content="前端工程師 CHIA NI 的作品集，展示 Vue3、Node.js、MongoDB、Vuetify 專案。">
+    <meta property="og:image" content="images/icons/icon-512x512.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ho-67.github.io/">
+
+    <title>Portfolio</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/icon-72x72.png">
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap ss-home">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="container s-header__content">
+
+                <div class="s-header__block">
+                    <div class="header-logo">
+                        <a class="logo" href="index.html">
+                            Portfolio
+                        </a>
+                    </div>
+                    <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="header-nav">
+                    <ul class="header-nav__links">
+                        <li class="current"><a class="smoothscroll" href="#intro">Intro</a></li>
+                        <li><a class="smoothscroll" href="#about">About</a></li>
+                        <li><a class="smoothscroll" href="#menu">Skill</a></li>
+                        <li><a class="smoothscroll" href="#gallery">Works</a></li>
+                    </ul> <!-- end header-nav__links -->
+
+                    <div class="header-contact">
+                        <a href="https://github.com/Ho-67" class="header-contact__num btn"
+                            aria-label="前往 Ho-67 的 GitHub" style="display: flex; align-items: center;">
+                            <svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32"
+                                data-view-component="true">
+                                <path
+                                    d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z">
+                                </path>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div> <!-- end header-contact -->
+                </nav> <!-- end header-nav -->
+
+            </div> <!-- end s-header__content -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # intro
+        ================================================== -->
+        <section id="intro" class="container s-intro target-section">
+
+            <div class="grid-block s-intro__content">
+
+                <div class="intro-header">
+                    <div class="intro-header__overline">Hey, I'm</div>
+                    <h1 class="intro-header__big-type">
+                        CHIA <br>
+                        NI
+                    </h1>
+                </div> <!-- end intro-header -->
+
+                <figure class="intro-pic-primary">
+                    <canvas id="intro-canvas-1"></canvas>
+                </figure> <!-- end intro-pic-primary -->
+
+                <div class="intro-block-content">
+
+                    <figure class="intro-block-content__pic">
+                        <canvas id="intro-canvas-2"></canvas>
+                    </figure> <!-- end intro-pic-secondary -->
+
+                    <div class="intro-block-content__text-wrap">
+                        <p class="intro-block-content__text">
+                            Frontend Developer <br>
+                            Web Designer
+                        </p>
+
+                        <!-- <ul class="intro-block-content__social">
+                            <li><a href="#0">FB</a></li>
+                            <li><a href="#0">IG</a></li>
+                            <li><a href="#0">PI</a></li>
+                            <li><a href="#0">X</a></li>
+                        </ul> -->
+                    </div> <!-- end intro-pic-secondary -->
+
+                </div> <!-- end intro-block-content -->
+
+                <div class="intro-scroll">
+                    <a class="smoothscroll" href="#about">
+                        <span class="intro-scroll__circle-text"></span>
+                        <span class="intro-scroll__text u-screen-reader-text">Scroll Down</span>
+                        <div class="intro-scroll__icon">
+                            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m5.214 14.522s4.505 4.502 6.259 6.255c.146.147.338.22.53.22s.384-.073.53-.22c1.754-1.752 6.249-6.244 6.249-6.244.144-.144.216-.334.217-.523 0-.193-.074-.386-.221-.534-.293-.293-.766-.294-1.057-.004l-4.968 4.968v-14.692c0-.414-.336-.75-.75-.75s-.75.336-.75.75v14.692l-4.979-4.978c-.289-.289-.761-.287-1.054.006-.148.148-.222.341-.221.534 0 .189.071.377.215.52z"
+                                    fill-rule="nonzero" />
+                            </svg>
+                        </div>
+                    </a>
+                </div> <!-- end intro-scroll -->
+
+            </div> <!-- grid-block -->
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- # about
+        ================================================== -->
+        <section id="about" class="container s-about target-section">
+
+            <div class="row s-about__content">
+
+                <div class="column xl-4 lg-5 md-12 s-about__content-start">
+
+                    <div class="section-header" data-num="01">
+                        <h2 class="text-display-title">關於我</h2>
+                    </div>
+
+                    <figure class="about-pic-primary">
+                        <img src="./images/HO-67.png" alt="author-pic">
+                    </figure>
+
+                </div> <!-- end s-about__content-start -->
+
+                <div class="column xl-6 lg-6 md-12 s-about__content-end">
+                    <p>
+                        嗨，我是對網頁開發有高度熱忱的前端工程師 CHIA NI！
+                        <br>
+                        個性和善、善於傾聽，能從他人角度思考問題，並在團隊中保持良好互動。
+                        <br>
+                        <br>
+                        畢業於數位媒體設計系，並於勞動部職訓局完成長達半年的前端開發訓練。
+                        <br>
+                        訓期內系統學習 HTML、CSS、JavaScript、Vue.js 等技術，透過 side project 與
+                        GitHub 練習，培養獨立解決問題的能力。
+                        <br>
+                        <br>
+                        對於程式開發充滿熱忱，樂於將想法轉化為實際可用的網站，期望持續挑戰並提升自我。
+
+                    </p>
+                </div> <!--end column -->
+
+            </div> <!-- end s-about__content-end -->
+
+        </section> <!-- end s-about -->
+
+
+        <!-- # menu
+        ================================================== -->
+        <section id="menu" class="container s-menu target-section">
+
+            <div class="row s-menu__content">
+
+                <div class="column xl-4 lg-5 md-12 s-menu__content-start">
+
+                    <div class="section-header" data-num="02">
+                        <h2 class="text-display-title">技能</h2>
+                    </div>
+
+                    <nav class="tab-nav">
+                        <ul class="tab-nav__list">
+                            <li>
+                                <a href="#tab-signature-blends">
+                                    <span>前端</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-pastries">
+                                    <span>後端</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab-gourmet-treats">
+                                    <span>其他</span>
+                                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                                            fill-rule="nonzero" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav> <!-- end tab-nav -->
+
+                </div> <!-- end s-menu__content-start -->
+
+                <div class="column xl-6 lg-6 md-12 s-menu__content-end">
+
+                    <div class="tab-content menu-block">
+
+                        <div id="tab-signature-blends" class="menu-block__group tab-content__item">
+
+                            <h6 class="menu-block__cat-name">
+                                前端技術掌握
+                            </h6>
+
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>程式語言 / 樣式語言</h4>
+                                        <p>
+                                            HTML5、CSS3、JavaScript (ES6+)、Scss
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>函式庫 / 框架 / UI 庫</h4>
+                                        <p>
+                                            jQuery、Vue 3、Tailwind、Vuetify
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>版本控制 / 協作</h4>
+                                        <p>
+                                            Git、GitHub
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul> <!-- end menu-list -->
+
+                        </div> <!-- end tab-content__item -->
+
+
+                        <div id="tab-pastries" class="menu-block__group tab-content__item">
+
+                            <h6 class="menu-block__cat-name">
+                                後端技術掌握
+                            </h6>
+
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>語言 / 執行環境</h4>
+                                        <p>
+                                            Node.js、Express.js
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>資料庫</h4>
+                                        <p>
+                                            MongoDB
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>雲端服務 / 部署</h4>
+                                        <p>
+                                            Cloudinary、Render
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul> <!-- end menu-list -->
+
+                        </div> <!-- end tab-content__item -->
+
+
+                        <div id="tab-gourmet-treats" class="menu-block__group tab-content__item">
+
+                            <h6 class="menu-block__cat-name">
+                                工具掌握
+                            </h6>
+
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <div class="menu-list__item-desc">
+                                        <h4>設計軟體</h4>
+                                        <p>
+                                            Photoshop、Illustrator、Figma、Adobe XD
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul> <!-- end menu-list -->
+
+                        </div> <!-- end tab-content__item -->
+
+                    </div> <!-- menu-block -->
+
+                </div> <!-- end s-menu__content-end -->
+
+            </div> <!-- end s-menu__content -->
+
+        </section> <!-- end s-menu -->
+
+
+        <!-- # gallery
+        ================================================== -->
+        <section id="gallery" class="container s-gallery target-section">
+
+            <div class="row s-gallery__header">
+                <div class="column xl-12 section-header-wrap">
+                    <div class="section-header" data-num="03">
+                        <h2 class="text-display-title">作品</h2>
+                    </div>
+                </div> <!-- end section-header-wrap -->
+            </div> <!-- end s-gallery__header -->
+
+            <div class="gallery-items grid-cols grid-cols--wrap">
+                <!-- SANVIA -->
+                <div class="gallery-items__item">
+                    <a href="https://ho-67.github.io/SANVIA_FRONT/#/" class="gallery-items__item-link" target="_blank">
+                        <!-- Visible Content -->
+                        <div class="gallery-item__visible-content">
+                            <div class="gallery-item__image-wrap">
+                                <img src="images/gallery/SANVIA.png" alt="SANVIA">
+                            </div>
+                            <div class="gallery-item__static-title">
+                                <h4>SANVIA - 情緒虛擬商品平台</h4>
+                                <p>探索全端開發流程，將抽象的情緒價值具體化為虛擬商品</p>
+                            </div>
+                        </div>
+
+                        <!-- Hover Overlay -->
+                        <div class="gallery-item__hover-overlay">
+                            <h4>SANVIA</h4>
+                            <ul class="project-details-list">
+                                <li><b>專案簡介：</b>結合 VIA (通過) 跟 SAN 值 的概念，將抽象的情緒價值具體化為虛擬商品，為期一個月的獨立開發結訓專題，旨在探索全端開發流程。
+                                </li>
+                                <li><b>技術棧：</b>Vue3 + Pinia + Node.js + Express.js + MongoDB</li>
+                                <li><b>專案現況：</b>目前已完成商品瀏覽、購物車、會員 JWT 註冊登入、RESTful API
+                                    串接與資料庫管理等功能，未來期許擴充社群互動模組，讓平台不只提供交易，更建立社交與情緒價值連結。</li>
+                                <li>備註：因後端平時處於休眠狀態，需手動刷新並耐心等候。</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div> <!-- end gallery-items__item-->
+
+                <!-- NovelSpotlight -->
+                <div class="gallery-items__item">
+                    <a href="https://ho-67.github.io/NovelSpotlight/#/" class="gallery-items__item-link"
+                        target="_blank">
+                        <!-- Visible Content -->
+                        <div class="gallery-item__visible-content">
+                            <div class="gallery-item__image-wrap">
+                                <img src="images/gallery/NovelSpotlight.png" alt="NovelSpotlight">
+                            </div>
+                            <div class="gallery-item__static-title">
+                                <h4>文輕小站 - 功能介紹網頁</h4>
+                                <p>使用 Figma 設計全新寫作 APP (Figma Prototype) 的介紹網頁</p>
+                            </div>
+                        </div>
+
+                        <!-- Hover Overlay -->
+                        <div class="gallery-item__hover-overlay">
+                            <h4>文輕小站</h4>
+                            <ul class="project-details-list">
+                                <li><b>專案簡介：</b>APP 設計為學生時期的畢業專題，希望推廣中文小說創作自由，降低新手創作者門檻。此網頁為原展示頁面的 RWD 重製版。</li>
+                                <li><b>技術棧：</b>Vue + Vite + Tailwind</li>
+                                <li><b>專案現況：</b>完成通過 Cloudinary 引入素材，實作 Vue Router 進行頁面導航，實現單頁應用程式（SPA）的效果。</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div> <!-- end gallery-items__item-->
+
+
+                <!-- Office Blackjack -->
+                <div class="gallery-items__item">
+                    <a href="https://ho-67.github.io/Office-Blackjack/" class="gallery-items__item-link"
+                        target="_blank">
+                        <!-- Visible Content -->
+                        <div class="gallery-item__visible-content">
+                            <div class="gallery-item__image-wrap">
+                                <img src="images/gallery/Office Blackjack.png" alt="Office Blackjack">
+                            </div>
+                            <div class="gallery-item__static-title">
+                                <h4>職場 21 點 - 翻牌點擊遊戲</h4>
+                                <p>結合經典撲克牌遊戲 21 點 (Blackjack) 與趣味點擊打 Boss 小遊戲</p>
+                            </div>
+                        </div>
+
+                        <!-- Hover Overlay -->
+                        <div class="gallery-item__hover-overlay">
+                            <h4>職場 21 點</h4>
+                            <ul class="project-details-list">
+                                <li><b>專案簡介：</b>這是一個結合經典撲克牌遊戲 21 點 (Blackjack) 與趣味點擊打 Boss
+                                    小遊戲的電腦尺寸網頁遊戲。在忙碌的辦公室場景中，挑戰你的運氣和反應力，為社畜的職場生存而戰！</li>
+                                <li><b>技術棧：</b>jQuery + HTML + CSS + JS (Vanilla JS)</li>
+                                <li><b>專案現況：</b>完成核心邏輯 21 點遊戲規則（含 A 點數彈性及洗牌），利用 CSS 3D 翻轉動畫及 JS 異步控制發牌時序，並利用
+                                    localStorage 儲存打 Boss 小遊戲的最高分數。
+                                </li>
+                                <li>備註：僅適合電腦尺寸，無 RWD 。</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div> <!-- end gallery-items__item-->
+
+                <!-- CuteClock -->
+                <div class="gallery-items__item">
+                    <a href="https://ho-67.github.io/CuteClock/" class="gallery-items__item-link" target="_blank">
+                        <!-- Visible Content -->
+                        <div class="gallery-item__visible-content">
+                            <div class="gallery-item__image-wrap">
+                                <img src="images/gallery/CuteClock.png" alt="CuteClock">
+                            </div>
+                            <div class="gallery-item__static-title">
+                                <h4>可愛數字鐘 - JS 練習</h4>
+                                <p>能夠即時且準確地顯示時間和日期，純前端展示應用</p>
+                            </div>
+                        </div>
+
+                        <!-- Hover Overlay -->
+                        <div class="gallery-item__hover-overlay">
+                            <h4>可愛數字鐘</h4>
+                            <ul class="project-details-list">
+                                <li><b>專案簡介：</b>簡潔、可愛風格的介面，用來顯示即時的當前時間與日期。</li>
+                                <li><b>技術棧：</b>HTML + CSS + JavaScript (Vanilla JS) + Particles.js</li>
+                                <li><b>專案現況：</b>已完成自動更新時間，小時與分鐘數字在變化時具有不同動畫效果。每秒跳動彩虹點；分鐘個位數：圓環排列數字；分鐘十位數 /
+                                    小時十位數：翻牌動畫；小時個位數：垂直滾動動畫。</li>
+                                <li>備註：僅適合電腦尺寸，無 RWD 。</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div> <!-- end gallery-items__item-->
+
+                <!-- Color Picker -->
+                <div class="gallery-items__item">
+                    <a href="https://ho-67.github.io/Color-Picker/" class="gallery-items__item-link" target="_blank">
+                        <!-- Visible Content -->
+                        <div class="gallery-item__visible-content">
+                            <div class="gallery-item__image-wrap">
+                                <img src="images/gallery/Color Picker.png" alt="Color Picker">
+                            </div>
+                            <div class="gallery-item__static-title">
+                                <h4>顏色選擇器 - JS 練習</h4>
+                                <p>可以透過 RGB 滑桿或直接輸入 Hex Code 來調整顏色</p>
+                            </div>
+                        </div>
+
+                        <!-- Hover Overlay -->
+                        <div class="gallery-item__hover-overlay">
+                            <h4>顏色選擇器</h4>
+                            <ul class="project-details-list">
+                                <li><b>專案簡介：</b>一個現代、功能豐富且互動性極高的 RGB/Hex 雙向顏色選擇器。 這個專案旨在提供一個直覺的介面，讓使用者可以透過 RGB 滑桿或直接輸入
+                                    Hex Code 來調整顏色，並即時看到背景顏色的變化。</li>
+                                <li><b>技術棧：</b>HTML + CSS + JavaScript (Vanilla JS)</li>
+                                <li><b>專案現況：</b>完成雙向顏色同步、動態文字適應、隨機顏色按鈕與非同步 Clipboard API 實現一鍵複製到剪貼簿的功能。</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div> <!-- end gallery-items__item-->
+
+                <!-- Pomodoro-Timer-2025 -->
+                <div class="gallery-items__item">
+                    <a href="https://ho-67.github.io/Pomodoro-Timer-2025/#/" class="gallery-items__item-link"
+                        target="_blank">
+                        <!-- Visible Content -->
+                        <div class="gallery-item__visible-content">
+                            <div class="gallery-item__image-wrap">
+                                <img src="images/gallery/Pomodoro-Timer-2025.png" alt="Pomodoro-Timer-2025">
+                            </div>
+                            <div class="gallery-item__static-title">
+                                <h4>番茄鐘 - Vuetify 練習</h4>
+                                <p>基於課堂範例，加上切換主題模式的功能</p>
+                            </div>
+                        </div>
+
+                        <!-- Hover Overlay -->
+                        <div class="gallery-item__hover-overlay">
+                            <h4>番茄鐘</h4>
+                            <ul class="project-details-list">
+                                <li><b>專案簡介：</b>這是一個基於番茄工作法（Pomodoro
+                                    Technique）設計的線上專注計時器應用程式。其核心目標是幫助使用者提高生產力，透過設定固定的專注時段（Pomodoro）、短暫休息和長休息間隔，有效管理工作與休息的平衡。介面設計簡潔直覺，支援模式間的順暢切換和時間自定義設定。
+                                </li>
+                                <li><b>技術棧：</b>Vuetify + PWA</li>
+                                <li><b>專案現況：</b>完成自行設定代辦事項與鈴聲。</li>
+                                <li>備註：僅適合電腦尺寸，無 RWD 。</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div> <!-- end gallery-items__item-->
+
+
+            </div> <!-- end grid-list-items -->
+
+        </section> <!-- end s-gallery -->
+
+        <!-- 此處省略 # testimonials 
+        ================================================== -->
+
+        <!-- # footer 
+        ================================================== -->
+        <footer id="footer" class="container s-footer">
+            <div class="row s-footer__bottom">
+
+                <div class="column xl-6 lg-12">
+                    <p class="ss-copyright">
+                        <span>© Ho-67</span>
+                        <span>Redesign from <a href="https://styleshout.com/">StyleShout</a></span>
+
+                        Built on <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                    </p>
+                </div>
+
+            </div> <!-- end s-footer__bottom -->
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+                            fill-rule="nonzero" />
+                    </svg>
+                </a>
+                <span>Back To Top</span>
+            </div> <!-- end ss-go-top -->
+
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end page-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/canvas-animation.js"></script>
+    <script src="js/register-sw.js"></script>
+
+</body>
+
+</html>
