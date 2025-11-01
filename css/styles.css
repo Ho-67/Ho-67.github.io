@@ -3748,6 +3748,16 @@ td:last-child {
   color: var(--color-text-light);
 }
 
+.intro-block-content__social a:hover {
+  color: var(--color-link-hover);
+}
+
+.intro-block-content__social-item{
+  display: flex;
+  align-items: center;
+  font-size: var(--text-sm);
+}
+
 /* --------------------------------------------------------------------
  * ## intro scroll down
  * -------------------------------------------------------------------- */

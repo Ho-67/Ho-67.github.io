@@ -1,4 +1,4 @@
-const CACHE_NAME = "portfolio-cache-v1";
+const CACHE_NAME = "portfolio-cache-v1.0.0";
 const urlsToCache = [
   // 核心檔案
   "/",
