@@ -3307,7 +3307,7 @@ td:last-child {
 .header-logo .logo {
   font-family: var(--font-2);
   font-weight: 900;
-  font-size: var(--text-2xl);
+  font-size: var(--text-3xl);
   /* width: var(--logo-width); */
   /* margin: 0; */
   /* vertical-align: bottom; */
@@ -3752,7 +3752,7 @@ td:last-child {
   color: var(--color-link-hover);
 }
 
-.intro-block-content__social-item{
+.intro-block-content__social-item {
   display: flex;
   align-items: center;
   font-size: var(--text-sm);
@@ -5137,10 +5137,6 @@ td:last-child {
 @media screen and (max-width: 400px) {
   .footer-newsletter h5 {
     font-size: var(--text-sm);
-    line-height: var(--vspace-0_75);
-  }
-}
--text-sm);
     line-height: var(--vspace-0_75);
   }
 }
