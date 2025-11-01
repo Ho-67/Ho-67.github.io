@@ -1,4 +1,4 @@
-const CACHE_NAME = "portfolio-cache-v1.0.0";
+const CACHE_NAME = "portfolio-cache-v1.0.1";
 const urlsToCache = [
   // 核心檔案
   "/",
@@ -16,16 +16,9 @@ const urlsToCache = [
   "/js/register-sw.js",
 
   // 主要圖片
-  "/images/HO-67.png",
   "/images/scrolldown-circle-text.svg",
 
-  // 作品集圖片
-  "/images/gallery/Color Picker.png",
-  "/images/gallery/CuteClock.png",
-  "/images/gallery/NovelSpotlight.png",
-  "/images/gallery/Office Blackjack.png",
-  "/images/gallery/Pomodoro-Timer-2025.png",
-  "/images/gallery/SANVIA.png",
+  // 作品集圖片（改為懶加載，不預先快取）
 
   // App 圖示
   "/images/icons/icon-72x72.png",
